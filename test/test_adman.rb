@@ -1,7 +1,17 @@
 require 'helper'
 
 class TestAdman < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+
+  include Adman
+
+  context "When announcing a service" do
+    setup do
+      announce "My Website"
+    end
+
+    should "announce a server" do
+      assert false
+    end
   end
+
 end
