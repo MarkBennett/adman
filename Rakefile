@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "adman"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "mark.f.bennett@gmail.com"
+    gem.summary = %Q{Easily share apps using Bonjour}
+    gem.description = %Q{Adman makes it easy to publish your application and collaborate with other apps on your local network using Bonjour.}
+    gem.email = "mark@burmis.ca"
     gem.homepage = "http://github.com/MarkBennett/adman"
     gem.authors = ["Mark"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.rubyforge_project = "adman"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

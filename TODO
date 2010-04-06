@@ -1,0 +1,2 @@
+- Add code to autoguess the port if we're running in Rails or Sinatra
+- Add code to poll services being broadcast
