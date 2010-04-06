@@ -1,7 +1,7 @@
 module Adman
   class << self
 
-    # Returns the broadcaster used by Adman
+    # Returns the Broadcaster used by Adman
     attr_reader :broadcaster
 
     def broadcaster=(broadcaster)
