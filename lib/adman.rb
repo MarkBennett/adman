@@ -10,12 +10,13 @@ module Adman
   TYPE_WEB_SERVER = "_http._tcp"
   DEFAULT_TYPE = TYPE_WEB_SERVER
 
-  def announce(name, options={})
+  def advertise(name, options={})
     type = options.fetch(:type, DEFAULT_TYPE)
     domain = nil
     port = options.fetch(:port, DEFAULT_PORT)
 
-    Adman.broadcaster.register(name, type, nil, port)
+    Adman.broadcast = Adman.broadcaster.register(name, type, nil, port)
+    Adman.broadcast
   end
 
 end

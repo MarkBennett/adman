@@ -12,7 +12,7 @@ class TestAdman < Test::Unit::TestCase
 
       # Announce the website
       @website_name = "My Website"
-      announce @website_name
+      advertise @website_name
 
     end
 
@@ -43,7 +43,7 @@ class TestAdman < Test::Unit::TestCase
       @service_name = "A great service"
       @port = 80
       @type = "_git._tcp"
-      announce @service_name, :port => @port, :type => @type
+      advertise @service_name, :port => @port, :type => @type
     end
 
     should "register it under the correct name" do
@@ -56,6 +56,10 @@ class TestAdman < Test::Unit::TestCase
 
     should "register it as the correct type" do
       assert_equal @broadcaster.registered_type, @type
+    end
+
+    should "register the broadcast for later" do
+      assert !Adman.broadcast.nil?
     end
 
   end

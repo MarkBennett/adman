@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{adman}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Mark"]
@@ -21,10 +21,14 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "FIXME",
      "LICENSE",
+     "README",
      "README.rdoc",
      "Rakefile",
+     "TODO",
      "VERSION",
+     "adman.gemspec",
      "lib/adman.rb",
      "lib/adman/common.rb",
      "lib/adman/dnssd.rb",

@@ -7,5 +7,12 @@ module Adman
     def broadcaster=(broadcaster)
       @broadcaster = broadcaster
     end
+
+    # The current broadcast
+    attr_reader :broadcast
+
+    def broadcast=(broadcast)
+      @broadcast = broadcast
+    end
   end
 end
